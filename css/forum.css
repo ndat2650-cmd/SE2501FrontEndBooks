@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    background:linear-gradient(to right bottom, blue, white, lightblue);
+    justify-content: space-between;
+}
+.menu > li > a{
+    display: block;
+    padding: 28px;
+    text-decoration: none;
+    color:darkblue;
+}
+.banner{
+    justify-content: space-between;
+    background:linear-gradient(to left top, blue, white, lightblue 80%);
+    align-items: center;
+    padding: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.banner > img {
+    max-width: 100%;
+}
+.banner > h1{
+    color:blue;
+    font-size: 2rem;
+    text-shadow: 2px 3px 3px white;
+    text-transform: uppercase;
+}
+.topic{
+    width: 80%;
+    margin: 1rem auto;
+    
+}
+.topic > h2{
+    color: white;
+    background-color: darkblue;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+.forums {
+    border-radius: 0 0 1rem 1rem;
+    background-color: lightblue;
+}
+.forum {
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 10px;
+}
+.forum:not(:last-child){
+    border-bottom: 1px solid blue;
+}
+.forum > div{
+    align-items: center;
+}
+.forum  img {
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.forum  a{
+    text-decoration: none;
+    padding: 0 4px;
+}
+.ads > div{
+    position: fixed;
+    background: linear-gradient(skyblue , blue);
+    padding: 8rem 1rem ;
+    color: white;
+    
+    width: 9%;
+    margin: 5px 0.5% 0 0.5%;
+    border-radius: 5px;
+}
+.ads > .left{
+    left: 0;
+}
+.ads > .right{
+    right: 0;
+}
+footer{
+    background-color: darkblue;
+    
+}
+footer > span{
+    display: block;
+    padding: 1rem 0;
+    text-align: center; 
+    color: white;
+}
