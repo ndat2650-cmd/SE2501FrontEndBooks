@@ -1,0 +1,86 @@
+.flex{
+    display: flex;
+}
+:root{
+    --my-padding: 1rem;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.book-detail{
+
+    
+}
+p,h3{
+    margin: 10px 0;
+}
+.col80{
+    padding: var(--my-padding);
+    width: 80%;
+}
+.col20{
+    padding: var(--my-padding);
+    width: 20%;
+}
+.col10{
+    width: 10%;
+
+}
+.col90{
+    width: 90%;
+}
+.col20 > img {
+    max-width: 100%;
+}
+table {
+    border-collapse: collapse;
+}
+.rating {
+    padding: 0;
+}
+.rating > li > a{
+    text-decoration: none;
+}
+.selector{
+    color: gold;
+}
+.review-container > textarea{
+    width: 100%;
+    height: 3rem;
+    padding: 10px;
+}
+.review-container > .btnn{
+    text-align: right;
+   
+}
+.review-container > .btnn > button{
+    padding: var(--my-padding);
+    background-color: darkblue;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+.subtitle::after{
+    content: "";
+    border: 2px solid darkblue;
+    display: block;
+    margin-top: 5px;
+}
+.comment{
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+}
+.col10 > img {
+    width: 100%;
+    border-radius: 50%;
+}
+.col90 >p {
+    margin: 10px 0;
+}
