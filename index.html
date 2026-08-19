@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/books.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="shortcut icon" href="./imgage/logo.png">
+    <script src="./js/books.js" defer></script>
 </head>
 <body>
     <header>
@@ -26,7 +28,7 @@
                 </a></li>
                 <li>
                   <button class="btn btn-succes"><i class="fa-solid fa-circle-user"></i> dang nhap</button>
-                  <button class="btn btn-info"><i class="fa-solid fa-circle-right"></i>dang ky</button>
+                  <button class="btn btn-info" onclick="openModalRegister(this)" rel="modal-register"><i class="fa-solid fa-circle-right"></i>dang ky</button>
                 </li>
              </ul>
         </nav>
@@ -162,5 +164,33 @@
     <footer>
         <span>nguyen phuoc dat@gmail</span>
     </footer>
+    <div class="modal flex" id="modal-register">
+      <div class="modal-content">
+        <a href="#" class="modal-close" onclick="closeModalRegister(this)" rel="modal-register">&times;</a>
+        <div class="control">
+          <p>ho va ten</p>
+          <input type="text" placeholder="ho va ten">
+        </div>
+        <div class="control">
+          <p>Email</p>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="control">
+          <p>ten dang nhap</p>
+          <input type="text" placeholder="ten dang nhap">
+        </div>
+        <div class="control">
+          <p>mat khau</p>
+          <input type="password" placeholder="mat khau">
+        </div>
+        <div class="control">
+          <p>xac nhan mat khau</p>
+          <input type="text" placeholder="xac nhan mat khau">
+        </div>
+        <div class="control  btn-control">
+          <button class="btn btn-succes">dang nhap</button>
+        </div>
+      </div>
+    </div>
 </body>
 </html>

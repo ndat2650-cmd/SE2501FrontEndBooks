@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/books.css">
     <link rel="shortcut icon" href="./imgage/logo.png">
     <link rel="stylesheet" href="./css/detail.css">
+    <script src="./js/detail.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js" integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
     <header>
@@ -33,7 +37,14 @@
     </header>
     <section class="book-detail flex container">
         <div class="col20">
-            <img src="./imgage/1.jpg" alt="">
+            <img src="./imgage/1.jpg" alt=""id="main-pic">
+            <div class="thumbail flex">
+                <div class=""><img src="./imgage/t01.png" alt=""></div>
+                <div class=""><img src="./imgage/t02.png" alt=""></div>
+                <div class=""><img src="./imgage/t03.png" alt=""></div>
+                <div class=""><img src="./imgage/t04.png" alt=""></div>
+                
+            </div>
         </div>
         <div class="col80">
             <h3>sach cong nghe phan mem</h3>
@@ -88,14 +99,15 @@ người dùng sử dụng React. </p>
     </section>
     <section class="container">
         <div class="review-container">
-            <textarea name="" id="" placeholder="nhap binh luan vo may thang tuat"></textarea>
+            <textarea name="" id="comment-content" placeholder="nhap binh luan vo may thang tuat" ></textarea>
             <div class="btnn">
-                <button><i class="fa-solid fa-comment"></i>nhap binh luan</button>
+                <button onclick="addComment()"><i class="fa-solid fa-comment" ></i>nhap binh luan</button>
             </div>
         </div>
     </section>
     <section class="container">
         <ul class="comment-list">
+
             <li class="comment flex">
                 <div class="col10">
                     <img src="./imgage/us.jpg" alt="">

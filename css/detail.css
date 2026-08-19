@@ -84,3 +84,15 @@ table {
 .col90 >p {
     margin: 10px 0;
 }
+
+.thumbail > div{
+    width: 20%;
+    padding: 5px;
+}
+.thumbail  img{
+    width: 100%;
+}
+.thumbail img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

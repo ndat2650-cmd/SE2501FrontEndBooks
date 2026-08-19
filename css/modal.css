@@ -1,0 +1,33 @@
+.modal{
+    background-color: rgba(0, 0, 255, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    visibility:hidden;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s;
+}
+.modal-content{
+    width: 40%;
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   position: relative;
+}
+
+.btn-control{
+    text-align: right;
+}
+.modal-close{
+    position: absolute;
+    right: 1rem;
+    top: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.error{
+    border: 1px solid red;
+}
